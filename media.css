@@ -1,0 +1,13 @@
+@media screen and (max-width : 800px){
+    .profile{
+        width: 25% ;
+    }
+
+    .feature1{
+        display: block;
+    }
+
+    .detail {
+        font-size: 0.8rem;
+    }
+}
