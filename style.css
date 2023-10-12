@@ -40,13 +40,14 @@ body{
     margin-left: 15px;
 }
 
+/* Profile Panel */
 .feature1{
     display: flex;
     justify-content: center;
 }
 
 .circle{
-    background-image: url("girl_female_woman_person_people_avatar_icon_230018.png");
+    background-image: url("/expenseManage_bdcoeTask1/images/girl_female_woman_person_people_avatar_icon_230018.png");
     background-size: cover;
     background-color: #fff;
     height : 4rem ;
@@ -94,4 +95,24 @@ h4 , p{
     font-weight: bolder;
 }
 
+/* Info Panel */
+h1{
+    font-family:  'Nunito', 'sans-serif';
+}
 
+.foot-panel{
+    display: flex;
+    margin-top: 400px;
+    height: 250px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.foot-panel div{
+    height: 8rem ;
+    width: 25%;
+    border: 5px solid #fff;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
