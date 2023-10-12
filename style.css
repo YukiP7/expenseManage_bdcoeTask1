@@ -102,8 +102,8 @@ h1{
 
 .foot-panel{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 400px;
-    height: 250px;
     width: 100%;
     justify-content: space-evenly;
 }
