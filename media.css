@@ -1,6 +1,8 @@
 @media screen and (max-width : 800px){
     .profile{
         width: 25% ;
+        padding: auto;
+        margin: auto;
     }
 
     .feature1{
@@ -10,4 +12,51 @@
     .detail {
         font-size: 0.8rem;
     }
+}
+
+@media screen  and (max-width : 530px){
+    .profile{
+        width: 15%;
+        justify-items: left;
+        padding: auto;
+        margin: auto;
+    }
+
+    .options{
+        font-size: 0.8rem;
+        padding-top: 10px;
+    }
+
+    .opt-bar{
+        display: block;
+    }
+
+    
+}
+@media screen  and (max-width : 430px){
+    .profile{
+        width: 5%;
+        justify-items: left;
+        padding: auto;
+        margin: auto;
+    }
+
+    .options{
+        font-size: 0.4rem;
+        padding-top: 10px;
+    }
+
+    .opt-bar{
+        display: block;
+    }
+
+    .circle{
+        height: 2rem ;
+        width: 2rem;
+    }
+
+    .detail{
+        font-size: 0.5rem;
+    }
+    
 }
