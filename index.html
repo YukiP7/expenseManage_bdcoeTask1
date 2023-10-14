@@ -8,6 +8,8 @@
     <link rel = "stylesheet" href = "media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script type="module" src="script.js"></script>
+
 </head>
 <body>
     
@@ -44,14 +46,56 @@
              </div>
         </div>
         <div class="info">
-            <h1>All Transactions</h1>
+            <div class="Transcations">
+                <h1>All Transactions</h1>
 
+                <div class="foot-panel">
 
+                    <div class="div">
+                        <p>Total Income</p>
+                        <div class="tot-income">
+                            <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                            <div id="income"></div>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <p>Total Expense</p>
+                        <div class="tot-expense">
+                            <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                            <div id="expense"></div>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <p>Total Balance</p>
+                        <div class="tot-balance">
+                            <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                            <div id="balance"></div>
+                        </div>
+                    </div>
 
-            <div class="foot-panel">
-                <div class="div1">Total Income</div>
-                <div class="div2">Total Expense</div>
-                <div class="div3">Total Balance</div>
+                </div>
+            </div>
+            
+            <div class="expense_Tracker">
+                <div class="container">
+                    <h2>Expense Calculator</h2>
+                    <form>
+                      <label>Description</label>
+                        <input type="text" id="description" />
+                      <label>Amount</label><input type="text" id="amt" />
+                      <label>Date</label><input type="date" id="amt" />
+                      <button>Add Expense</button>
+              
+                      <div id="results">
+                        <div id="wrng-ans"></div>
+                        <h3>Expense List</h3>
+                        <ul id="ans">
+                            
+                        </ul>
+                      </div>
+                     
+                    </form>
+                  </div>
             </div>
         </div>
     </div>
