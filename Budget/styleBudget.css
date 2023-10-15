@@ -30,7 +30,7 @@ body{
     border-radius: 25px;
 }
 
-.income{
+.budget{
     padding : 20px;
     height: 640px;
     border: 4px solid #fff;
@@ -112,7 +112,7 @@ h4 , p{
     color: #7723c4;
 }
 
-/* income Section */
+/* budget Section */
 
 .total{
     display: flex;
@@ -201,7 +201,7 @@ button{
         margin-bottom: 20px;
     }
 
-    .income{
+    .budget{
         display: flex;
         flex-direction: column;
         position: relative;
