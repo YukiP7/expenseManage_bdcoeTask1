@@ -14,37 +14,47 @@
 <body>
     
     <div class="main-section">
-        <div class="profile">
-            <div class="feature1">
-                <div class="circle"></div>
-                 <div class="detail">
-                    <h2>Miki</h2>
-                    <p>Your Money</p>
+        <div class="header">
+            <div class="hamburger">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+            <i class="fa-solid fa-xmark fa-2xl" id ="cross"></i>
+            <div class="profile">
+                <div class="feature1">
+                    <div class="circle"></div>
+                     <div class="detail">
+                        <h2>Miki</h2>
+                        <p>Your Money</p>
+                     </div>
+                </div>
+    
+                <div class="options">
+                    
+                    <div class="opt-bar">
+                        <i class="fa-solid fa-chart-line fa-xl"></i>
+                        <a href="#">Dashboard</a>
+                    </div>
+                    <div class="opt-bar">
+                        <i class="fa-solid fa-credit-card fa-xl"></i>
+                        <a href="#">Transactions</a>
+                    </div>
+                    <div class="opt-bar">
+                        <i class="fa-solid fa-money-bill-trend-up fa-xl"></i>
+                        <a href="#">Incomes</a>
+                    </div>
+                    <div class="opt-bar">
+                        <i class="fa-solid fa-money-bill-transfer fa-xl"></i>
+                        <a href="#">Expenses</a>
+                    </div>
+                    
+                    <div class="opt-bar">
+                        <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                        <a href="#">Sign out</a>
+                    </div>
                  </div>
             </div>
-
-            <div class="options">
-                
-                <div class="opt-bar">
-                    <i class="fa-solid fa-chart-line fa-xl"></i>
-                    <a href="#">Dashboard</a>
-                </div>
-                <div class="opt-bar">
-                    <i class="fa-solid fa-credit-card fa-xl"></i>
-                    <a href="#">Transactions</a>
-                </div>
-                <div class="opt-bar">
-                    <i class="fa-solid fa-money-bill-trend-up fa-xl"></i>
-                    <a href="#">Incomes</a>
-                </div>
-                <div class="opt-bar">
-                    <i class="fa-solid fa-money-bill-transfer fa-xl"></i>
-                    <a href="#">Expenses</a>
-                </div>
-                
-               
-             </div>
         </div>
+
         <div class="info">
             <div class="Transcations">
                 <h1>All Transactions</h1>
@@ -53,22 +63,22 @@
 
                     <div class="div">
                         <p>Total Income</p>
-                        <div class="tot-income">
-                            <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                        <div class="total_amount">
+                            <i class="fa-solid fa-dollar-sign fa-xl"></i>
                             <div id="income"></div>
                         </div>
                     </div>
                     <div class="div">
                         <p>Total Expense</p>
-                        <div class="tot-expense">
-                            <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                        <div class="total_amount">
+                            <i class="fa-solid fa-dollar-sign fa-xl"></i>
                             <div id="expense"></div>
                         </div>
                     </div>
                     <div class="div">
                         <p>Total Balance</p>
-                        <div class="tot-balance">
-                            <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                        <div class="total_amount">
+                            <i class="fa-solid fa-dollar-sign fa-xl"></i>
                             <div id="balance"></div>
                         </div>
                     </div>
@@ -84,7 +94,7 @@
                         <input type="text" id="description" />
                       <label>Amount</label><input type="text" id="amt" />
                       <label>Date</label><input type="date" id="amt" />
-                      <button>Add Expense</button>
+                      <button> + Add Expense</button>
               
                       <div id="results">
                         <div id="wrng-ans"></div>

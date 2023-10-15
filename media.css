@@ -1,62 +1,132 @@
-@media screen and (max-width : 800px){
-    .profile{
-        width: 25% ;
-        padding: auto;
-        margin: auto;
+@media screen and (max-width : 805px){
+    .header{
+       position: fixed;
+       left : 0% ;
+       top : 0%;
+       bottom: 0%;
+       flex-direction: column;
+       background-color: rgb(221, 77, 101);
+       width: 50%;
+       border-radius: 10px;
+       text-align: center;
+       transition: 0.3s;
+        box-shadow: 0 10px 27px ; 
+        height: 100%;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        visibility:visible;
+        margin-top: 2px;
+        padding: 0;
     }
 
+    
+    #cross{
+        display:initial ;
+        cursor: pointer;
+        position: fixed;
+        visibility: visible;
+    }
     .feature1{
-        display: block;
+        display: inline-block;
+        left: 0;
+        margin-top: 20px;
     }
 
     .detail {
-        font-size: 0.8rem;
+        margin: 0%;
+        left: 0%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .info{
+        width: 92%;
+        position:absolute;
+        margin-left: 5px;
     }
 }
 
-@media screen  and (max-width : 530px){
-    .profile{
-        width: 15%;
-        justify-items: left;
-        padding: auto;
-        margin: auto;
+ @media screen  and (max-width : 530px){
+    .div{
+        height: 90%;
+        width: 80%;
+        font-size: medium;
     }
 
-    .options{
-        font-size: 0.8rem;
-        padding-top: 10px;
+    .info{
+        height: 580px;
     }
 
-    .opt-bar{
+    .container{
+        margin-top : 0;
+        padding: 0;
+    }
+ }
+
+@media screen  and (max-width : 480px){
+    .info{
         display: block;
+        width: 100%;
+        text-align: center;
+        height: auto;
     }
 
-    
+    form{
+        text-align: left;
+    }
+
+    form input{
+        width: max-content;
+    }
+
 }
-@media screen  and (max-width : 430px){
-    .profile{
-        width: 5%;
-        justify-items: left;
-        padding: auto;
-        margin: auto;
+
+@media screen and (max-width : 380px) {
+
+    .info{
+        width: fit-content ;
+    }
+    form{
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        height: fit-content;
+    }
+    .div{
+        width: 10rem;
+        height: 100px;
+
     }
 
-    .options{
-        font-size: 0.4rem;
-        padding-top: 10px;
+    .total_amount{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.3rem ;
     }
 
-    .opt-bar{
-        display: block;
+    .total_amount i{
+        margin-top: 11px;
+        font-size: medium;
     }
 
-    .circle{
-        height: 2rem ;
-        width: 2rem;
+    #results{
+        width: max-content;
     }
 
-    .detail{
-        font-size: 0.5rem;
+    form input{
+        width: 150px;
+        font-size: medium;
     }
-    
+
+    .container{
+        text-align: left;
+    }
+
+     h2{
+        font-size: medium;
+    }
 }
