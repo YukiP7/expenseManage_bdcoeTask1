@@ -43,9 +43,12 @@
     }
 
     .info{
-        width: 92%;
-        position:absolute;
-        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        scroll-behavior: smooth;
     }
 }
 
@@ -56,10 +59,6 @@
         font-size: medium;
     }
 
-    .info{
-        height: 580px;
-    }
-
     .container{
         margin-top : 0;
         padding: 0;
@@ -67,12 +66,6 @@
  }
 
 @media screen  and (max-width : 480px){
-    .info{
-        display: block;
-        width: 100%;
-        text-align: center;
-        height: auto;
-    }
 
     form{
         text-align: left;
@@ -86,9 +79,7 @@
 
 @media screen and (max-width : 380px) {
 
-    .info{
-        width: fit-content ;
-    }
+    
     form{
         margin: 0;
         padding: 0;
@@ -128,5 +119,9 @@
 
      h2{
         font-size: medium;
+    }
+
+    .header{
+        width: 100%;
     }
 }
