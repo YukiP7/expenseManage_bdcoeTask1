@@ -42,4 +42,4 @@ hamburger.addEventListener('click' , function(){
      info.style.visibility = "hidden" ;
 
 
-})
+});

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="styleExpense.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="events.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="hamburger">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <i class="fa-solid fa-xmark fa-2xl" id ="cross"></i>
+        <div class="profile">
+            <div class="feature1">
+                <div class="circle"></div>
+                 <div class="detail">
+                    <h2>Miki</h2>
+                    <p>Your Money</p>
+                 </div>
+            </div>
+
+            <div class="options">
+                
+                <div class="opt-bar">
+                    <i class="fa-solid fa-chart-line fa-xl"></i>
+                    <a href="/expenseManage_bdcoeTask1/index.html">Dashboard</a>
+                </div>
+                <div class="opt-bar">
+                    <i class="fa-solid fa-credit-card fa-xl"></i>
+                    <a href="#">Transactions</a>
+                </div>
+                <div class="opt-bar">
+                    <i class="fa-solid fa-money-bill-trend-up fa-xl"></i>
+                    <a href="/expenseManage_bdcoeTask1/incomes/income.html">Incomes</a>
+                </div>
+                <div class="opt-bar">
+                    <i class="fa-solid fa-money-bill-transfer fa-xl"></i>
+                    <a href="#">Expenses</a>
+                </div>
+                
+                <div class="opt-bar">
+                    <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                    <a href="#">Sign out</a>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="expense">
+        <div class="total">
+            <h1>Total Expenses</h1>
+            <div class="total_amount">
+                <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+                <div id="amt">0.00</div>
+            </div>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Add Description" >
+            <input type = "number" placeholder="Amount" >
+            <button>+ Add Expense</button>
+        </form>
+    </div>
+       
+    </div>
+    
+</body>
+</html>
