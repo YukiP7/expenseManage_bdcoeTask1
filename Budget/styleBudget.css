@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #ffccf1;
+    background-color: #615d60;
     color: #7723c4;
 }
 
@@ -164,7 +164,7 @@ button{
        top : 0%;
        bottom: 0%;
        flex-direction: column;
-       background-color: rgb(221, 77, 101);
+       background-color: rgb(213, 207, 208);
        width: 50%;
        border-radius: 10px;
        text-align: center;
