@@ -60,11 +60,10 @@ form2.addEventListener('submit' , function(e){
         
         const exp = document.querySelector('#expense')
         localStorage.setItem(exp , amount);
-        // exp.innerHTML = `<span>${localStorage.getItem(exp , amount)}</span>` ;
         let sum = a.reduce((h1,h2)=>{
             return h1+h2
         })
-        arr.push(sum) ;
+        arr.push(amount) ;
         // console.log(sum);
         exp.innerHTML = `<span>${sum}</span>`
 
