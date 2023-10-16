@@ -17,21 +17,39 @@ hamburger.addEventListener('click' , function(){
     profile.style.visibility = "visible" ;
     hamburger.style.visibility="hidden" ;
     cross.style.visibility = "visible" ;
-    //  transcations.style.visibility = "hidden" ;
      info.style.visibility = "hidden" ;
 
 
 });
 
 
-const form = document.querySelector('form')
+const form1 = document.querySelector('#one')
+const form2 = document.querySelector('#two')
+let arr = []
 
-form.addEventListener('submit' , function(e){
+form1.addEventListener('submit' , function(e){
+    e.preventDefault() ;
+
+    const budget = document.getElementById('budget')
+    const amt = parseInt(document.getElementById('inputAmt').value) ;
+    localStorage.setItem(budget , amt);
+    budget.innerHTML = `<span>${localStorage.getItem(budget , amt)}</span>` ;
+    arr.push(amt) ;
+});
+
+const balance = document.getElementById('balance')
+
+    
+
+let a=[]
+form2.addEventListener('submit' , function(e){
     e.preventDefault();
 
-    const amount = parseInt(document.querySelector('#amt').value)
+    let amount = parseInt(document.querySelector('#amt').value);
     const descrip = (document.querySelector('#description').value)
     const wrng_ans = document.querySelector('#wrng-ans')
+
+    a.push(amount);
 
     if(amount === '' || amount === 0 || isNaN(amount)){
         wrng_ans.innerHTML = `Invalid Input ${amount}`     
@@ -41,7 +59,25 @@ form.addEventListener('submit' , function(e){
         document.querySelector('#ans').appendChild(item) 
         
         const exp = document.querySelector('#expense')
-        exp.innerHTML = `<span>${amount}</span>` ;
+        localStorage.setItem(exp , amount);
+        // exp.innerHTML = `<span>${localStorage.getItem(exp , amount)}</span>` ;
+        let sum = a.reduce((h1,h2)=>{
+            return h1+h2
+        })
+        arr.push(sum) ;
+        // console.log(sum);
+        exp.innerHTML = `<span>${sum}</span>`
+
+        let bal = arr.reduce((h1 , h2) =>{
+            return h1 - h2
+        })
+        balance.innerHTML = `<span>${bal}</span>`
     }
 });
 
+
+
+
+
+ 
+    

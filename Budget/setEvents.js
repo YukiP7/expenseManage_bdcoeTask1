@@ -25,9 +25,11 @@ hamburger.addEventListener('click' , function(){
 const form = document.querySelector('form')
 
 form.addEventListener('submit' , function(e){
-
-    const amount = parseInt(document.getElementById('inputAmt').value)
+    e.preventDefault();
+    const amt = parseInt(document.getElementById('inputAmt').value)
     const totInc = document.getElementById('amt') 
     
+    localStorage.setItem(totInc , amt) ;
+    totInc.innerHTML = `<span>${localStorage.getItem(totInc , amt)}</span>`;
     
 });

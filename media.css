@@ -53,6 +53,9 @@
 }
 
  @media screen  and (max-width : 530px){
+    .info{
+        scroll-behavior: smooth;
+    }
     .div{
         height: 90%;
         width: 80%;
@@ -67,6 +70,9 @@
 
 @media screen  and (max-width : 480px){
 
+    .info{
+        scroll-behavior: smooth;
+    }
     form{
         text-align: left;
     }

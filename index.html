@@ -59,6 +59,11 @@
             <div class="Transcations">
                 <h1>All Transactions</h1>
 
+                <form id="one">
+                    <input type="text" placeholder="Add Description" >
+                    <input type = "number" placeholder="Amount" id="inputAmt">
+                    <button>+ Add Budget</button>
+                </form>
                 <div class="foot-panel">
 
                     <div class="div">
@@ -76,7 +81,7 @@
                         </div>
                     </div>
                     <div class="div">
-                        <p>Total Balance</p>
+                        <p>Net Balance</p>
                         <div class="total_amount">
                             <i class="fa-solid fa-dollar-sign fa-xl"></i>
                             <div id="balance">0.00</div>
@@ -89,7 +94,7 @@
             <div class="expense_Tracker">
                 <div class="container">
                     <h2>Expense Calculator</h2>
-                    <form>
+                    <form id="two">
                       <label>Description</label>
                         <input type="text" id="description" />
                       <label>Amount</label><input type="Amount" id="amt" />
