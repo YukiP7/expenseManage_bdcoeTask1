@@ -71,6 +71,8 @@ form2.addEventListener('submit' , function(e){
             return h1 - h2
         })
         balance.innerHTML = `<span>${bal}</span>`
+        const money = document.querySelector('#money')
+        money.innerHTML = `Money left : <span>${bal}</span>`
     }
 });
 
